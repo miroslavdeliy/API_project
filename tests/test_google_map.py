@@ -1,4 +1,5 @@
 from requests import  Response
+
 from utils.api import GoogleMapsApi
 from utils.checking import Checking
 
@@ -6,7 +7,6 @@ from utils.checking import Checking
 class TestCreatePlace:
     # Метод тестирования создания локации
     def test_create_new_place(self):
-
         # Шаг теста для метода POST
         print('Метод POST')
         result_post: Response = GoogleMapsApi.create_new_place()
